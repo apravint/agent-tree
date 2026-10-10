@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-tree"
+version = "0.1.0"
+description = "Hierarchical Multi-Tier Agent Orchestration Engine. Where expensive models think and cheaper agents do the grunt work."
+readme = "README.md"
+authors = [{ name = "Ayyappa Pravin", email = "apravint@users.noreply.github.com" }]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development"
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+agent-tree = "agent_tree.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/apravint/agent-tree"
+Issues = "https://github.com/apravint/agent-tree/issues"
